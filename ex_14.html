@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Overlay</title>
+        <style>
+            body {
+                height: 300px;
+            }
+
+            p {
+                font-family: Arial;
+                margin-left: 12px;
+            }
+
+            .right-side {
+                color: white;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 100px;
+                background-color: green;
+            }
+
+            .overlay {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .modal-notification {
+                height: 110px;
+                width: 300px;
+                border-radius: 7px;
+                background-color: white;
+
+            }
+
+            .modal-title {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 13px;
+                margin-bottom: 13px;
+            }
+
+            .modal-statement {
+                font-size: 13.5px;
+                font-weight: 540;
+            }
+
+            button {
+                margin-left: 12px;
+                font-size: 12px;
+                padding-top: 2px;
+                padding-bottom: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="right-side">
+            right side
+        </div>
+        <div class="overlay">
+            
+            <div class="modal-notification">
+                <p class="modal-title">
+                    Modal Title
+                </p>
+                <p class="modal-statement">
+                    This is a modal
+                </p>
+                <button>Close</button>
+            </div>
+        </div>
+    </body>
+</html>

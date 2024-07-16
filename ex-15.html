@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add to Cart</title>
+        <style>
+            .whole-page {
+                position: relative;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+
+            .image-container {
+                height: 200px;
+                width: 300px;
+
+                position: relative;
+            }
+
+            .image-preview {
+                height: 200px;
+                width: 100%;
+
+                
+            }
+
+            .discount-tag {
+                font-family: Arial;
+                background-color: black;
+                color: white;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .add-to-cart-overlay {
+                background-color: rgba(255, 255, 255, 0.8);
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 60px;
+                
+
+            }
+
+            .add-to-cart-btn {
+                font-family: Arial;
+                font-size: 10px;
+                font-weight: 700;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="whole-page">
+            <div class="image-container">
+                <img class="image-preview" src="ex-15-thumbnail/2023-12-02.png">
+                <div class="discount-tag">20% off</div>
+                <div class="add-to-cart-overlay">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
